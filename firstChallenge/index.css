@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+	 margin: 0;
+	padding: 0;
+}
+:root{
+	--primary-color: white;
+	--secondary-color:black;
+}
+html[data-theme=light] {
+	--primary-color: white;
+	--secondary-color:black;
+}
+html[data-theme=dark] {
+	--primary-color: black;
+	--secondary-color:white;
+}
+body {
+	font-family: "Space Mono";
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color:var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.dark-mode{
+width: 20px;
+height: 20px;
+fill: var(--secondary-color);
+margin-right: 5%;
+float: right;
+cursor: pointer;
+}
+.heading {
+	margin: 3% 5%;
+	text-align: start;
+}
+
+.parent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5% 0;
+}
+
+.flex-item {
+	flex: 1 1 0;
+	align-items: center;
+}
+
+.img-section img {
+	display: inline-block;
+	max-width: 90%;
+	
+}
+.text-section {
+	text-align: left;
+	padding: 0 5%;
+}
+h1 {
+	font-size: 4rem;
+}
+.message {
+	font-size: 1.5rem;
+	margin: 5% 0;
+	font-weight: 400;
+}
+
+.btn-black {
+	background-color:var(--secondary-color);
+	color: var(--primary-color);
+	padding: 20px;
+	letter-spacing: 1px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+ }
+
+@media only screen and (max-width: 764px) {
+	.parent {
+		display: block;
+		margin: 15% 0;
+	}
+	.footer {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	
+	 }
+  }
